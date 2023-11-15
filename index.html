@@ -11,7 +11,8 @@
     <button onclick="test()">Click</button>
 
     <script>
-        const test = () => {
+        const test = async () => {
+            await setTimeout(()=>{},5000)
             navigator.share({
                 text:"This is a test"
             })
